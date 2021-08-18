@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+    p {
+        transition: 0.3s;
+    }
+    button {
+        border: 2px solid rgba(114, 114, 114, 0);
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    a {
+        margin-top: 40px;
+    }
+</style>
+<body>
+    <h2 id="name"></h2>
+    <button id="button">Click to print my name</button>
+    <br/>
+    <p><a href="https://thenathanresume.netlify.app/">Check out Resume</a></p>
+</body>
+<script>
+    const button = document.querySelector('#button')
+    const name = document.querySelector('#name')
+
+    button.addEventListener('click', () => {
+        name.textContent = 'Jonathan Agusa'
+    })
+</script>
+</html>
